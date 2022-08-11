@@ -29,7 +29,7 @@ count++;
 }
 if (!format[i])
 return (count);
-f = check_for_specifiers(&format[i + 1]);
+f = check_specifiers(&format[i + 1]);
 if (f != NULL)
 {
 count += f(valist);
@@ -49,7 +49,7 @@ va_end(valist);
 return (count);
 }
 
-static int (*check_for_specifiers(const char *format))(va_list)
+static int (*check_specifiers(const char *format))(va_list)
 {
 unsigned int i;
 print_t p[] = {
