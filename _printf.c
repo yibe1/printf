@@ -42,6 +42,7 @@ int _printf(const char *format, ...)
 	va_start(valist,format);
 	size = strlen(format);
 	c = format[i];
+	if(foramt == NULL)return;
 	while(i<size){
 		if(valist == NULL){
 			_putchar(c);
