@@ -39,7 +39,12 @@ int _printf(const char *format, ...)
 			i++;
 			_putnum(va_arg(valist, long int));
 				break;
-				}
+				
+		case 'c':
+			i++;
+			_putchar(va_arg(valist, char));
+			break;
+		}
 		}else{
 			_putchar(c);
 			i++;
