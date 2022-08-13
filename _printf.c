@@ -11,14 +11,15 @@
  *
  * Return: number of characters printed
  */
+
 int  _putchar(char ch){
-       write(1,&ch,1);
-	return 0;
+write(1,&ch,1);
+return 0;
 }
 int _putnum(long int num){
-	printf("%ld",num);
+printf("%ld",num);
 
-	return 0;
+return 0;
 }
 int _printf(const char *format, ...)
 {
@@ -45,7 +46,7 @@ int _printf(const char *format, ...)
 		}
 		c = format[i];
 	}
-	printf("Number of Characters = %d", i);
+       
 	return i;
 }
 
