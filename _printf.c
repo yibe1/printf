@@ -56,9 +56,9 @@ int _printf(const char *format, ...)
 	return i;
 }
 
-int main(void){
+/*int main(void){
 
 	_printf("%c", 'S');
 	return 0;
 
-	}
+	}*/
