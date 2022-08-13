@@ -14,7 +14,7 @@
 
 int  _putchar(char ch){
 write(1,&ch,1);
-write(1,"\n",1);
+
 return 0;
 }
 int _putnum(long int num){
@@ -52,6 +52,7 @@ int _printf(const char *format, ...)
 		}
 		c = format[i];
 	}
+	write(1,"\n",1);
        
 	return i;
 }
