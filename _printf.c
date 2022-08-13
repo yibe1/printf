@@ -70,9 +70,9 @@ int _printf(const char *format, ...)
 return i;
 }
 
-int main(void){
+/*int main(void){
 
 	_printf("%s", "This is a test \n");
 	return 0;
 
-	}
+	}*/
