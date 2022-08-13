@@ -58,10 +58,15 @@ int _printf(const char *format, ...)
 			i++;
 			_printtext(va_arg(valist, char*));
 			break;
+		case '%':
+			i++;
+			_putchar('%');
+			break;
 		}
 		}else{
 			_putchar(c);
 			i++;
+			
 		}
 		
 		c = format[i];
