@@ -43,7 +43,11 @@ int _printf(const char *format, ...)
 	size = strlen(format);
 	c = format[i];
 	while(i<size){
-		
+		if(valist == NULL){
+			_putchar(c);
+			i++;
+			continue;
+		}
 		if(c == '%'){
 			i++;
 			c = format[i];
@@ -56,12 +60,7 @@ int _printf(const char *format, ...)
 		case 'c':
 			i++;
 			temp = va_arg(valist, int);
-			if(temp != NULL)
-				_putchar(temp);_
-			else{				
-			_putchar('%');
-			_putchar('c');
-			}
+			_putchar(temp);
 			break;
 		case 's':
 			i++;
