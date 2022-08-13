@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 {
 
 	int i = 0;
-	char c;
+	char c,temp;
 	va_list valist;
 	int size;
 	va_start(valist,format);
@@ -55,7 +55,13 @@ int _printf(const char *format, ...)
 				
 		case 'c':
 			i++;
-			_putchar(va_arg(valist, int));
+			temp = va_arg(valist, int);
+			if(temp != NULL)
+				_putchar(temp);_
+			else{				
+			_putchar('%');
+			_putchar('c');
+			}
 			break;
 		case 's':
 			i++;
