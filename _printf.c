@@ -49,9 +49,9 @@ int _printf(const char *format, ...)
 	return i;
 }
 
-int main(void){
+/*int main(void){
 
 	_printf("Let's print a simple sentence.\n");
 	return 0;
 
-	}
+	}*/
