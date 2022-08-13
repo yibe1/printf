@@ -22,6 +22,15 @@ printf("%ld",num);
 
 return 0;
 }
+int _printtext(char *ch){
+	int i=0;
+	while(ch[i] != '\0'){
+		_putchar(ch[i]);
+		i++;
+	}
+
+	return 0;
+}
 int _printf(const char *format, ...)
 {
 
@@ -39,25 +48,31 @@ int _printf(const char *format, ...)
 		case 'd':
 			i++;
 			_putnum(va_arg(valist, long int));
-				break;
+			break;
 				
 		case 'c':
 			i++;
 			_putchar(va_arg(valist, int));
+			break;
+		case 's':
+			i++;
+			_printtext(va_arg(valist, char*));
 			break;
 		}
 		}else{
 			_putchar(c);
 			i++;
 		}
+		
 		c = format[i];
 	}
+	va_end(valist);
 return i;
 }
 
-/*int main(void){
+int main(void){
 
-	_printf("%c", 'S');
+	_printf("%s", "This is a test \n");
 	return 0;
 
-	}*/
+	}
