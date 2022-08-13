@@ -72,6 +72,12 @@ int _printf(const char *format, ...)
 			break;
 		case '\0':
 			break;
+		default:
+			_putchar('%');
+			_putchar(c);
+			i++;
+			break;
+		       
 		}
 		}else{
 			_putchar(c);
