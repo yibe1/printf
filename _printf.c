@@ -45,12 +45,13 @@ int _printf(const char *format, ...)
 		}
 		c = format[i];
 	}
-	return 0;
+
+	return i-1;
 }
 
 /*int main(void){
 
-	_printf("Test for printf %d",56788);
+	_printf("Let's try to printf a simple sentence.\n");
 	return 0;
 
 	}*/
