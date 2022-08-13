@@ -4,7 +4,6 @@
 #include <limits.h>
 #include <stdarg.h>
 #include <unistd.h>
-#include <string.h>
 
 /**
  * _printf - print chracters
@@ -13,8 +12,7 @@
  * Return: number of characters printed
  */
 int  _putchar(char ch){
-/*write(1,&ch,1);*/
-	printf("%c",ch);
+       write(1,&ch,1);
 	return 0;
 }
 int _putnum(long int num){
@@ -26,12 +24,11 @@ int _printf(const char *format, ...)
 {
 
 	int i = 0;
-	int size = strlen(format);
 	va_list valist;
 	va_start(valist,format);
-	
-	while(i<size){
-		char c = format[i];
+	char c = format[i];
+	while(c != '\0'){
+		c = format[i];
 		if(c == '%'){
 			i++;
 			c = format[i];
