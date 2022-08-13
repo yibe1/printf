@@ -14,6 +14,7 @@
 
 int  _putchar(char ch){
 write(1,&ch,1);
+write(1,"\n",1);
 return 0;
 }
 int _putnum(long int num){
@@ -55,9 +56,9 @@ int _printf(const char *format, ...)
 	return i;
 }
 
-/*int main(void){
+int main(void){
 
-	_printf("Let's print a simple sentence.\n");
+	_printf("%c", 'S');
 	return 0;
 
-	}*/
+	}
