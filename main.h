@@ -13,6 +13,7 @@ typedef struct print
 } print_t;
 
 int _putchar(char c);
+int _putnum(long int num);
 int _printf(const char *format, ...);
 int print_c(va_list c);
 int print_s(va_list s);

@@ -45,13 +45,13 @@ int _printf(const char *format, ...)
 		}
 		c = format[i];
 	}
-
-	return i-1;
+	printf("Number of Characters = %d", i);
+	return i;
 }
 
-/*int main(void){
+int main(void){
 
-	_printf("Let's try to printf a simple sentence.\n");
+	_printf("Let's print a simple sentence.\n");
 	return 0;
 
-	}*/
+	}
