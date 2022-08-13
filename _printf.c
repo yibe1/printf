@@ -29,7 +29,7 @@ int _printf(const char *format, ...)
 	va_start(valist,format);
 	c = format[i];
 	while(c != '\0'){
-		c = format[i];
+		
 		if(c == '%'){
 			i++;
 			c = format[i];
@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 			_putchar(c);
 			i++;
 		}
-		
+		c = format[i];
 	}
 	return 0;
 }
