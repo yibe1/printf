@@ -77,7 +77,7 @@ int _printf(const char *format, ...)
 		c = format[i];
 	}
 	va_end(valist);
-return i;
+	return (i - 1);
 }
 
 /*int main(void){
