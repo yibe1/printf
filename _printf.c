@@ -13,7 +13,7 @@
  * Return: number of characters printed
  */
 int  _putchar(char ch){
-	//write(1,&ch,1);
+/*write(1,&ch,1);*/
 	printf("%c",ch);
 	return 0;
 }
