@@ -52,9 +52,7 @@ int _printf(const char *format, ...)
 		}
 		c = format[i];
 	}
-	write(1,"\n",1);
-       
-	return i;
+return i;
 }
 
 /*int main(void){
