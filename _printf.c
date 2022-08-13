@@ -42,7 +42,7 @@ int _printf(const char *format, ...)
 				
 		case 'c':
 			i++;
-			_putchar(va_arg(valist, char));
+			_putchar(va_arg(valist, int));
 			break;
 		}
 		}else{
