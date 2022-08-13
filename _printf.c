@@ -49,9 +49,9 @@ int _printf(const char *format, ...)
 	return 0;
 }
 
-int main(void){
+/*int main(void){
 
 	_printf("Test for printf %d",56788);
 	return 0;
 
-}
+	}*/
