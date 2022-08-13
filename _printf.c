@@ -24,9 +24,10 @@ int _printf(const char *format, ...)
 {
 
 	int i = 0;
+	char c;
 	va_list valist;
 	va_start(valist,format);
-	char c = format[i];
+	c = format[i];
 	while(c != '\0'){
 		c = format[i];
 		if(c == '%'){
